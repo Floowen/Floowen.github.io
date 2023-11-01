@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <title>Document</title>
+    <title>Simple Calculator</title>
 </head>
 <body>
     <div id="app">
         <input v-model="txt1" type="number">
         <input v-model="txt2" type="number"><br>
-        <button v-on:click="result=txt1+txt2">+</button>
-        <button @click="result=txt1-txt2">-</button>
-        <button @click="result=txt1*txt2">*</button>
-        <button @click="result=txt1/txt2">/</button>
+
+        <button v-on:click="result= txt1 + txt2">+</button>
+        <button @click="result= txt1 - txt2">-</button>
+        <button @click="result= txt1 * txt2">*</button>
+        <button @click="result= txt1 / txt2">/</button>
+        <br>
         <br>
         result: {{ result }}
     </div>
